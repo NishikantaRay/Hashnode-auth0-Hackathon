@@ -17,6 +17,16 @@
     <title>StudyTub</title>
     <link rel="icon" href="img/core-img/nanda.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        label {
+        margin-bottom: 10px;
+        display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,6 +53,14 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button id="btn-login" class="nav-link" disabled="true" onclick="login()">Log in</button>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+                                   
                                 </li>
                             </ul>
 

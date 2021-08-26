@@ -30,6 +30,7 @@
 </head>
 
 <body>
+    
     <div id="preloader">
         <div class="preload-content">
             <div id="world-load"></div>
@@ -54,16 +55,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
+                                <li class="nav-item" style="padding-left: 20px;">
+                                    <button id="btn-login" class="btn btn-outline-light"   disabled="true" onclick="login()">Log in</button>
+                                   
+                                </li>&nbsp;&nbsp;
                                 <li class="nav-item">
-                                    <button id="btn-login"  disabled="true" onclick="login()">Log in</button>
+                                    <button id="btn-logout" class="btn btn-outline-light" disabled="true" onclick="logout()">Log out</button>
                                    
                                 </li>
-                                <li class="nav-item">
-                                    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
-                                   
-                                </li>
+                                
                             </ul>
-
+                            
                             <div id="search-wrapper">
                                 <form action="#">
                                     <input type="text" id="search" placeholder="Search something...">
@@ -78,7 +80,20 @@
         </div>
     </header>
 
-
+    <!-- <div class="hidden" id="gated-content">
+        <p>
+          You're seeing this content because you're currently
+          <strong>logged in</strong>.
+        </p>
+        <label>
+          Access token:
+          <pre id="ipt-access-token"></pre>
+        </label>
+        <label>
+          User profile:
+          <pre id="ipt-user-profile"></pre>
+        </label>
+      </div> -->
     <div class="hero-area">
 
         <div class="hero-slides owl-carousel">
@@ -410,20 +425,7 @@
                 </p>
             </div>
         </footer>
-        <div class="hidden" id="gated-content">
-            <p>
-              You're seeing this content because you're currently
-              <strong>logged in</strong>.
-            </p>
-            <label>
-              Access token:
-              <pre id="ipt-access-token"></pre>
-            </label>
-            <label>
-              User profile:
-              <pre id="ipt-user-profile"></pre>
-            </label>
-          </div>
+        
         <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
         <script src="js/app.js"></script>
         <script type="text/javascript" data-cfasync="false">

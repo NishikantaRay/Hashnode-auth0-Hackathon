@@ -1,5 +1,5 @@
 let auth0 = null;
-const fetchAuthConfig = () => fetch("./app.js");
+const fetchAuthConfig = () => fetch("auth_config.json");
 
 // ..
 

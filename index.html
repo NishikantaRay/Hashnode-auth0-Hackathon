@@ -343,7 +343,33 @@
 
 
         </div>
-        <div class="text-center mb-5">
+        <div class="text-center title "> <b>TEAM</b> </div>
+        <div class="text-center">
+            <div id="contributors"></div>
+        </div>
+        <script defer>
+            const getData = async () => {
+                const api = "https://api.github.com/repos/NishikantaRay/studytub/contributors";
+                try {
+                    let data = await fetch(api);
+                    realData = await data.json();
+                    var html = '';
+                    realData.forEach(element => {
+                        html += `
+                            <a href="${element.html_url}">
+                                <img id="imgid" src="${element.avatar_url}" />
+                                
+                            </a>`
+                    });
+                    console.log(realData.login);
+                    $('#contributors').append(html);
+                } catch (error) {
+                    console.log(error);
+                }
+            };
+            getData();
+        </script>
+        <div class="text-center mb-5 mt-5">
             <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HeltcYshrwRhQ3" async> </script> </form>
         </div>
         <footer id="dk-footer">

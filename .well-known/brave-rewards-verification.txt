@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: studytub.netlify.app
+Token: 81aedb7b44ce3e42db95aa5555144e9578fcd63277a63c91a2f88355a3a1be3d

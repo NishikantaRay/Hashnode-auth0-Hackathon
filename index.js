@@ -850,3 +850,6 @@ $('.counting').each(function() {
   
 
 });
+
+
+

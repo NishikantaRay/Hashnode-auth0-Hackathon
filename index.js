@@ -1,3 +1,13 @@
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
+
+
+
+
+
+
 var authConfig = {
   siteName: 'Notes', // WebSite Name
   version: '2.0', // VersionControl, do not modify manually

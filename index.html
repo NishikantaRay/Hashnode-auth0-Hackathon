@@ -293,29 +293,7 @@
       </div>
     </div>
   </div>
-  <script defer>
-    const getData = async () => {
-      const api =
-        "https://api.github.com/repos/NishikantaRay/studytub/contributors";
-      try {
-        let data = await fetch(api);
-        realData = await data.json();
-        var html = "";
-        realData.forEach((element) => {
-          html += `
-                            <a href="${element.html_url}">
-                                <img id="imgid" src="${element.avatar_url}" />
-                                
-                            </a>`;
-        });
-        console.log(realData.login);
-        $("#contributors").append(html);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getData();
-  </script>
+  
   <br /><br /><br />
   <footer id="dk-footer">
     <div class="container">

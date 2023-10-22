@@ -1,0 +1,9 @@
+/* jumbtron adjustment for mobile */
+@media only screen and (max-width: 767px) {
+  .d-n {
+    display: none;
+  }
+  .d-n-b {
+    margin-top: -50px;
+  }
+}

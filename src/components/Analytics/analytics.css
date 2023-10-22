@@ -1,0 +1,16 @@
+/**
+ * Media query for small screens that sets the display, text alignment and width of the .counter_value_text and .counter_item classes.
+ * Ensures they take only the necessary width and take up full width of parent.
+ */
+@media only screen and (max-width: 767px) {
+  .counter_value_text {
+    display: inline-block; /* Ensures it takes only the necessary width */
+    text-align: center;
+    width: 100%; /* Makes it take up full width of parent */
+  }
+  .counter_item {
+    display: inline-block; /* Ensures it takes only the necessary width */
+    text-align: center;
+    width: 100%; /* Makes it take up full width of parent */
+  }
+}

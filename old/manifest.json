@@ -1,0 +1,22 @@
+{
+    "name" : "Studytub-Your One-Stop for all the Notes.",
+    "short_name": "Studytub",
+    "start_url": "index.html",
+    "scope":"./",
+    "icons": [
+        {
+          "src": "img/core-img/nanda.webp",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "img/core-img/nanda.webp",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      
+      "background_color": "#333",
+      "display": "standalone"
+
+}
